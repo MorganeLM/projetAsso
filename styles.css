@@ -1,0 +1,39 @@
+
+
+/* BODY */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px; 
+  margin: 0; 
+}
+
+/* nav */
+nav {
+  display: flex;
+  background-color: teal;
+  height: 60px;
+}
+nav ul{
+  display: flex;
+}
+nav li{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav>a:first-child{
+  padding-left: 30px;
+}
+
+/* section accueil */
+#accueil img{
+  height: calc(100vh - 60px);
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
