@@ -151,8 +151,17 @@ section > div > i{
 }
 
 /* section à propos */
+#about{
+  background-color: rgb(29, 160, 153);
+  padding-top: 20px;
+}
+
 #about div{
-  padding: 0px 10%;
+  margin: 0px 10%;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  width: 80%;
 }
 
 #about > div > p{
@@ -168,10 +177,15 @@ section > div > i{
   margin-bottom: 20px;
 }
 
-#about div img{
+#about div div div{
   flex: 1;
   padding-left: 10px;
   height: calc(50vh);
+}
+
+#about div div div img{
+  height: 100%;
+  width: auto;
 }
 
 #about div p{
@@ -188,4 +202,43 @@ section > div > i{
   border-radius: 10px;
   padding: 40px;
   margin: 0px 20%;
+}
+
+#contact table{
+  width: 100%;
+}
+
+#contact table .label{
+  text-align: right;
+  padding-right: 10px;
+  vertical-align: top;
+  width: 30%;
+  padding-bottom: 10px;
+
+}
+
+#contact table .input{
+  text-align: left;
+  width: 70%;
+  padding-bottom: 10px;
+
+}
+
+#contact textarea{
+  width: 80%;
+  height: 20vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+#contact input{
+  width: 80%;
+}
+
+#contact p{
+  margin-top: 20px;
+}
+
+#contact button{
+  width: 150px;
 }

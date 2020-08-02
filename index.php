@@ -43,10 +43,10 @@
     </section>
 
     <section id="about">
-        <h2>
-            A propos
-        </h2>
         <div>
+            <h2>
+                A propos
+            </h2>
             <h3>Pourquoi cette plateforme ?</h3>
             <div>
                 <p>L'ADN du projet du Collectif du Ramier est de fédérer tous les acteurs de la
@@ -56,7 +56,7 @@
                     besoin des associations d'une part à connaitre les projets portées par les autres associations,
                     et d'autre part à la volonté d'avoir un outil unique de mise en relation entre projets et
                     bénévoles potentiels. </p>
-                <img src="images/ileramier1.jpg" alt="plan ile ramier dessin">
+                <div><img src="images/ileramier1.jpg" alt="plan ile ramier dessin"></div>
             </div>
             <p>Pour en savoir plus sur <a href="https://sites.google.com/lecollectifduramier.org/site/accueil">le Collecif du Ramier</a></p>
         </div>
@@ -65,18 +65,21 @@
     <section>
             <h2>Nous contacter</h2>
             <form id="contact">
-                <div>
-                    <label for="nominput">Nom</label>
-                    <input type="text" id="nominput" placeholder="...">
-                </div>
-                <div>
-                    <label for="emailinput">Adresse email</label>
-                    <input type="email" id="emailinput" placeholder="..@..">
-                </div>
-                <div >
-                    <label for="message">Message</label>
-                    <textarea id="message">Votre message, vos suggestions ...</textarea>
-                </div>
+                <table>
+                    <tr>
+                        <td class='label'><label for="nominput">Nom :</label></td>
+                        <td class='input'><input type="text" id="nominput" placeholder="..."></td>
+                    </tr>
+                    <tr>
+                        <td class='label'><label for="emailinput">Adresse email :</label></td>
+                        <td class='input'><input type="email" id="emailinput" placeholder="..@.."></td>
+                    </tr>
+                    <tr>
+                        <td class='label'><label for="message">Message :</label></td>
+                        <td class='input'><textarea id="message" placeholder="Votre message, vos suggestions ..."></textarea></td>
+                    </tr>
+                </table>
+                <button>Envoyer</button>
                 <p>Ou directement à : ecosysteme@collectif-du-ramier.fr</p>
             </form>
     </section>
