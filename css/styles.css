@@ -1,5 +1,3 @@
-
-
 /* BODY */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -35,13 +33,22 @@ button:hover{
 /* nav */
 nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: teal;
   height: 60px;
+  padding: 0px 30px;
   z-index: 2;
   position: fixed;
   width: 100%;
 }
+
+nav div{
+  display: flex;
+  align-items: center;
+}
+
+
 nav ul{
   display: flex;
 }
@@ -55,20 +62,24 @@ nav a{
   color: white;
 }
 
-nav>a:first-child{
-  padding-left: 30px;
+nav div:last-child{
+  position: relative;
+  right: 60px;
 }
 
-.navbar-text{
-  position: absolute;
-  right: 0;
-  transform: translateX(-50%);
+nav div:last-child a{
+  padding: 0px 10px;
 }
 
 /* MAIN */
 main{
   position: relative;
   top: 60px;
+  padding: 20px 30px;
+}
+
+main h1{
+  padding-bottom: 10px;
 }
 
 section{
@@ -242,3 +253,4 @@ section > div > i{
 #contact button{
   width: 150px;
 }
+
